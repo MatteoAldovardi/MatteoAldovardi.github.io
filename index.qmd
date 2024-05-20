@@ -2,6 +2,7 @@
 title: "MatteoaldovaRdi.github.io"
 ---
 
-This is a QuartO webSAIte.
+![An astronaut riding a rose](images/astronaut_riding_rose.png)
 
+This is a QuartO webSAIte.
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

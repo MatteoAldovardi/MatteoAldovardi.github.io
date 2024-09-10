@@ -2,8 +2,6 @@
 title: "About Me"
 ---
 
-# About Me
-
 ## Academic Background
 
 I graduated in October 2022 with a degree in Mathematics. My thesis, titled **"Note on the Hardy Inequality"**, focused on Harmonic Analysis and led to a published article in the **Bollettino Unione Matematica Italiana**. In this article, I presented a slight improvement of Hardy's inequality.

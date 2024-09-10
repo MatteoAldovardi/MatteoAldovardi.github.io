@@ -1,0 +1,68 @@
+---
+title: "Welcome to My Site"
+description: "This a Quarto Website"
+author: "Matteo Aldovardi"
+date: "today"
+format:
+  html:
+    theme: slate
+include-in-header:
+  - text: |
+      <style>
+      /* General Text Styling */
+      body {
+          color: #ffffff; /* Set text color to white */
+          margin: 0; /* Remove default margins */
+          padding: 0; /* Remove default padding */
+          position: relative; /* Ensure relative positioning for the body */
+      }
+
+      /* Link Styling */
+      a {
+        color: #ff0000; /* Set link color to red */
+        text-decoration: none; /* Remove underline from links */
+      }
+
+      a:hover {
+        text-decoration: underline; /* Add underline on hover */
+      }
+
+      /* Background Image Styling */
+      .background-image {
+        position: relative;
+        width: 100%; /* Full width of the viewport */
+        height: 30vh; /* Limited height (e.g., 30% of the viewport height) */
+        background-image: url("images/banner.jpeg");
+        background-size: cover; /* Cover the container */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        overflow: hidden; /* Ensure no scrollbars due to absolute positioning */
+      }
+
+      /* Content Styling */
+      .content {
+        position: relative;
+        z-index: 1; /* Ensure content is above the background */
+        padding: 20px; /* Add padding around the content */
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+      }
+      </style>
+---
+
+<div class="background-image"></div> <!-- Full-Width Background Image -->
+
+<div class="content"> <!-- Content Wrapper -->
+
+# Who I am and what's this site
+
+Hi, I'm Matteo Aldovardi, a machine learning enthusiast and mathematician. This website is a combination of my blog and portfolio where I document my journey in data science, AI, and mathematics.
+
+## Recent Posts
+- [Photogrammetry Reconstruction of my teapot](blog/post1.qmd)
+- [Central Limit Theorem Local Version](blog/post2.qmd)
+
+
+## Projects
+- [Project 1: Predictive Model for Stock Prices](portfolio.qmd)
+
+</div> <!-- End of Content Wrapper -->

@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  navbar:
+    left:              # Left side of the navigation bar
+      - text: "Home" 
+        href: index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+      - text: "About Me"
+        href: about.qmd  
+    right:             # Right side (social links, etc.)
+      - icon: github
+        href: https://github.com/MatteoAldovardi
+      - icon: linkedin
+        href: https://www.linkedin.com/in/matteo-aldovardi-63520b257/
+
+format:
+  html:
+    theme: cosmo       # Bootstrap theme (e.g., cosmo, litera, flatly)
+    toc: false          # Enable table of contents
+    toc-depth: 2       # Specify depth of table of contents (optional)
+
+

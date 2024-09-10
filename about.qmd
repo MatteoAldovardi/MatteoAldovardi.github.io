@@ -1,0 +1,31 @@
+---
+title: "About Me"
+---
+
+# About Me
+
+## Academic Background
+
+I graduated in October 2022 with a degree in Mathematics. My thesis, titled **"Note on the Hardy Inequality"**, focused on Harmonic Analysis and led to a published article in the **Bollettino Unione Matematica Italiana**. In this article, I presented a slight improvement of Hardy's inequality.
+
+## Current Studies
+
+In 2023, I enrolled in the **Master in Mathematical and Physical Methods**, where I am deepening my knowledge in mathematical modeling and advanced physical methods.
+
+## Professional Experience
+
+I completed an internship at **Leonardo**, focusing on **computer vision** and **3D deep learning**. This experience allowed me to work on cutting-edge technologies and apply my mathematical skills to real-world problems.
+
+## Selected Publications and Projects
+
+- **Article**: "A Slight Improvement of Hardy's Inequality" published in Bollettino Unione Matematica Italiana (2023).
+- **Thesis**: "Note on the Hardy Inequality".
+- **Internship**: Leonardo, focusing on computer vision and 3D deep learning.
+
+## Contact
+
+Feel free to reach out to me via [email](mailto:your.email@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yourprofile).
+
+## Download CV
+
+You can download my CV [here](link-to-your-cv).

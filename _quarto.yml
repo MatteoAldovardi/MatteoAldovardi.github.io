@@ -16,7 +16,8 @@ website:
         href: https://github.com/MatteoAldovardi
       - icon: linkedin
         href: https://www.linkedin.com/in/matteo-aldovardi-63520b257/
-
+      - icon: youtube
+        href: https://www.youtube.com/channel/UCn6gfvpsW1kbTK0E9AP6NjA
 format:
   html:
     theme: cosmo       # Bootstrap theme (e.g., cosmo, litera, flatly)

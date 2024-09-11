@@ -1,7 +1,7 @@
 ---
 title: "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset"
-author: "Your Name"
-date: "YYYY-MM-DD"
+author: "Matteo Aldovardi"
+date: "2024-04-11"
 categories: [machine learning, KNN, Python]
 format: html
 ---
@@ -117,9 +117,9 @@ plot_knn_result_with_image(train_dataset, test_point, k, assigned_label)
 
 ![Iris Setosa](../images/blog/post_11-09-24/Iris_setosa.jpg){#fig-setosa width=200}
 
-*Photo of Iris Versicolor by Danielle Langlois, taken at Forillon National Park, Quebec, Canada in July 2005. License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)*
+*Photo of **Iris Versicolor** (Blue flag flower) by Danielle Langlois, taken in July 2005 at Forillon National Park, Quebec, Canada. License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). [File](https://commons.wikimedia.org/wiki/File:Iris_versicolor_3.jpg).*
 
-*Photo of Iris Setosa by Wouter Hagens, uploaded on 15 May 2015. License: [CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Kosaciec_szczecinkowaty_Iris_setosa.jpg)*
+*Photo of Iris Setosa by Radomil. License: [GNU Free Documentation License, Version 1.2 or later](https://commons.wikimedia.org/wiki/File:Kosaciec_szczecinkowaty_Iris_setosa.jpg).*
 
 :::
 

@@ -123,3 +123,21 @@ plot_knn_result_with_image(train_dataset, test_point, k, assigned_label)
 
 :::
 
+
+
+
+
+## Credits
+
+1. **K-Nearest Neighbors Algorithm**:  
+   This implementation was adapted from the tutorial provided by Jason Brownlee, "Tutorial to Implement k-Nearest Neighbors in Python from Scratch."  
+   Source: [Machine Learning Mastery](https://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-from-scratch/)
+
+2. **Iris Dataset**:  
+   The dataset used in this post is the famous **Iris dataset**. It is available through the [Scikit-learn library](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html).
+
+3. **Visualizations**:  
+   Visualizations were created using the **Matplotlib** library.
+
+
+

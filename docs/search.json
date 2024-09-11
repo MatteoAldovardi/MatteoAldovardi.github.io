@@ -7,11 +7,60 @@
     "text": "Here are some of the key projects and publications I worked on:\n\nPublication: A note about Hardy’s inequality for Pseudo-Differential Operators\nProject 2: Interniship with Leonardo in the field of 3D DeepLearning"
   },
   {
+    "objectID": "blog/post_11-09-24.html",
+    "href": "blog/post_11-09-24.html",
+    "title": "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset",
+    "section": "",
+    "text": "In this post, I’ll demonstrate how to implement the K-Nearest Neighbors (KNN) algorithm from scratch in Python. We will apply the algorithm to the Iris dataset, visualize the classification results, and include images of the predicted Iris flower types."
+  },
+  {
+    "objectID": "blog/post_11-09-24.html#overview",
+    "href": "blog/post_11-09-24.html#overview",
+    "title": "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset",
+    "section": "",
+    "text": "In this post, I’ll demonstrate how to implement the K-Nearest Neighbors (KNN) algorithm from scratch in Python. We will apply the algorithm to the Iris dataset, visualize the classification results, and include images of the predicted Iris flower types."
+  },
+  {
+    "objectID": "blog/post_11-09-24.html#the-iris-dataset",
+    "href": "blog/post_11-09-24.html#the-iris-dataset",
+    "title": "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset",
+    "section": "The Iris Dataset",
+    "text": "The Iris Dataset\nThe Iris dataset consists of measurements from three types of Iris flowers: Setosa, Versicolor, and Virginica. For this demonstration, we’ll focus on Iris Setosa and Iris Versicolor.\n\nReplicating the KNN Algorithm\nHere’s a brief overview of the KNN algorithm implemented from scratch:\nimport numpy as np\nfrom collections import Counter\n\ndef distance(x, y):\n    return np.linalg.norm(x - y)\n\ndef scan_sorroundings(dataset, x, k):\n    distances = []\n    for point in dataset:\n        coord, label = point[0], point[1]\n        dist = distance(x, coord)\n        distances.append((dist, label))\n    distances.sort(key=lambda pair: pair[0])\n    return [label for _, label in distances[:k]]\n\ndef classify_new_point(dataset, x, k):\n    neighbors = scan_sorroundings(dataset, x, k)\n    most_common_label = Counter(neighbors).most_common(1)[0][0]\n    return most_common_label"
+  },
+  {
+    "objectID": "blog/post_11-09-24.html#testing-on-the-iris-dataset",
+    "href": "blog/post_11-09-24.html#testing-on-the-iris-dataset",
+    "title": "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset",
+    "section": "Testing on the Iris Dataset",
+    "text": "Testing on the Iris Dataset\nWe applied the KNN algorithm to the Iris dataset, focusing on two classes: Iris Setosa and Iris Versicolor. Here’s the code for loading the dataset and classifying a new point:\n\nfrom sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\n\niris = load_iris()\ndata = iris['data']\nlabels = iris['target']\n\nbinary_data = data[labels != 2][:, :2]\nbinary_labels = labels[labels != 2]\n\ntrain_data, test_data, train_labels, test_labels = train_test_split(binary_data, binary_labels, test_size=0.2, random_state=42)\ntrain_dataset = [(train_data[i], train_labels[i]) for i in range(len(train_data))]\n\ntest_point = test_data[0]\nk = 3\nassigned_label = classify_new_point(train_dataset, test_point, k)"
+  },
+  {
+    "objectID": "blog/post_11-09-24.html#visualizing-the-results",
+    "href": "blog/post_11-09-24.html#visualizing-the-results",
+    "title": "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset",
+    "section": "Visualizing the Results",
+    "text": "Visualizing the Results\nThe following code visualizes the dataset and includes an image of the predicted flower type:\nimport matplotlib.pyplot as plt\nimport matplotlib.image as mpimg\n\ndef plot_knn_result_with_image(dataset, x, k, assigned_label):\n    A_points = np.array([point[0] for point in dataset if point[1] == 0])\n    B_points = np.array([point[0] for point in dataset if point[1] == 1])\n\n    plt.scatter(A_points[:, 0], A_points[:, 1], color='red', label='Iris Setosa')\n    plt.scatter(B_points[:, 0], B_points[:, 1], color='blue', label='Iris Versicolor')\n\n    if assigned_label == 0:\n        plt.scatter(x[0], x[1], color='red', marker='x', s=100)\n        image_path = 'iris_setosa.jpg'\n    else:\n        plt.scatter(x[0], x[1], color='blue', marker='x', s=100)\n        image_path = 'iris_versicolor.jpg'\n\n    plt.legend()\n    plt.xlabel('Sepal Length')\n    plt.ylabel('Sepal Width')\n    plt.title(f'KNN Classification (k={k})')\n    plt.show()\n\n    img = mpimg.imread(image_path)\n    plt.imshow(img)\n    plt.axis('off')\n    plt.title(f'Predicted Flower: {\"Iris Setosa\" if assigned_label == 0 else \"Iris Versicolor\"}')\n    plt.show()\n\nplot_knn_result_with_image(train_dataset, test_point, k, assigned_label)"
+  },
+  {
+    "objectID": "blog/post_11-09-24.html#the-two-species-of-iris-classified",
+    "href": "blog/post_11-09-24.html#the-two-species-of-iris-classified",
+    "title": "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset",
+    "section": "The two species of iris classified:",
+    "text": "The two species of iris classified:"
+  },
+  {
+    "objectID": "blog/post_11-09-24.html#images-of-iris-flowers",
+    "href": "blog/post_11-09-24.html#images-of-iris-flowers",
+    "title": "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset",
+    "section": "Images of Iris Flowers",
+    "text": "Images of Iris Flowers\n\n\n\n!\n\n\n!"
+  },
+  {
     "objectID": "index.html#recent-posts",
     "href": "index.html#recent-posts",
     "title": "Welcome to My Site",
     "section": "Recent Posts",
-    "text": "Recent Posts\n\nPhotogrammetry Reconstruction of my teapot\nCentral Limit Theorem Local Version"
+    "text": "Recent Posts\n\nPhotogrammetry Reconstruction of my teapot\nImplementing K-Nearest Neighbor with Python"
   },
   {
     "objectID": "index.html#projects",

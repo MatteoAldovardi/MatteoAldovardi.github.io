@@ -59,7 +59,7 @@ Hi, I'm Matteo Aldovardi, a machine learning enthusiast and mathematician. This 
 
 ## Recent Posts
 - [Photogrammetry Reconstruction of my teapot](blog/post1.qmd)
-- [Central Limit Theorem Local Version](blog/post2.qmd)
+- [Implementing K-Nearest Neighbor with Python](blog/post_11-09-24.qmd)
 
 
 ## Projects

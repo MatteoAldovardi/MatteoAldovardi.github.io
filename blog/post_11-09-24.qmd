@@ -1,7 +1,7 @@
 ---
 title: "Implementing K-Nearest Neighbors (KNN) from Scratch Using the Iris Dataset"
 author: "Matteo Aldovardi"
-date: "2024-04-11"
+date: "2024-09-11"
 categories: [machine learning, KNN, Python]
 format: html
 ---

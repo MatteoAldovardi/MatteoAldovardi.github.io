@@ -105,11 +105,10 @@ plot_knn_result_with_image(train_dataset, test_point, k, assigned_label)
 
 ## Plot of a classification result 
 
-
-
-
-## The two species of iris classified:
 ![Classification of a test point](../images/blog/post_11-09-24/results.jpg){#fig-setosa width=800}
+
+
+## The two species of iris classified
 
 ::: {#post-images layout-ncol=2}
 

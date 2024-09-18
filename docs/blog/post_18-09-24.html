@@ -258,7 +258,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>PPO_Path <span class="op">=</span> <span class="st">'/content/drive/My Drive/training/saved_Models/PPO_Model_Cartpole'</span></span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>os.makedirs(PPO_Path, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>model.save(PPO_Path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>##&nbsp;Evaluating the Model After training, the model’s performance is evaluated over 10 episodes. The evaluation provides two metrics:</p>
+</section>
+<section id="evaluating-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="evaluating-the-model">Evaluating the Model</h2>
+<p>After training, the model’s performance is evaluated over 10 episodes. The evaluation provides two metrics:</p>
 <ul>
 <li>Mean reward: The average reward across the episodes.</li>
 <li>Standard deviation of reward: A measure of how consistent the performance is across episodes.</li>

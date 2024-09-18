@@ -86,9 +86,8 @@ PPO_Path = '/content/drive/My Drive/training/saved_Models/PPO_Model_Cartpole'
 os.makedirs(PPO_Path, exist_ok=True)
 model.save(PPO_Path)
 ```
+## Evaluating the Model
 
-
-## Evaluating the Model
 After training, the model's performance is evaluated over 10 episodes. The evaluation provides two metrics:
 
 - Mean reward: The average reward across the episodes.

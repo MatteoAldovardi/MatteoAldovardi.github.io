@@ -53,12 +53,13 @@ include-in-header:
 
 <div class="content"> <!-- Content Wrapper -->
 
-# Who I am and what's this site( Disclaimer: this page is still under construction!)
+# Who I am and what's this site
 
 Hi, I'm Matteo Aldovardi, a machine learning enthusiast and mathematician. This website is a combination of my blog and portfolio where I document my journey in data science, AI, and mathematics.
 
 ## Recent Posts
 - [Training and Visualizing a PPO Agent on CartPole using Stable Baselines3](blog/post_18-09-24.qmd)
+
 - [Implementing K-Nearest Neighbor with Python](blog/post_11-09-24.qmd)
 
 

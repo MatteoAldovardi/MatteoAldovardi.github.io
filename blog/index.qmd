@@ -3,3 +3,4 @@ title: "Posts by Date:"
 ---
 
 ### [September 11, 2024: Implementing K-Nearest Neighbor with Python](post_11-09-24.qmd)
+### [September 18, 2024: Implementing K-Nearest Neighbor with Python](post_18-09-24.qmd)

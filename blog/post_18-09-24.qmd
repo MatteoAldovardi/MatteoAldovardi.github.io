@@ -8,7 +8,17 @@ categories: ["Reinforcement Learning", "Stable Baselines3", "CartPole", "PPO"]
 
 # Training and Visualizing a PPO Agent on CartPole using Stable Baselines3
 
-This post explores how to train a Proximal Policy Optimization (PPO) agent on the CartPole environment using the `stable-baselines3` library and visualize the agent’s performance using video. The process includes training, evaluation, and generating videos for both random and trained policies.
+
+This post details how to train a Proximal Policy Optimization (PPO) agent on the CartPole environment using the stable-baselines3 library and visualize the agent’s performance through video. This exercise replicates the methods demonstrated in Nicholas Renotte's tutorial, ["Reinforcement Learning in 3 Hours | Full Course using Python"](https://www.youtube.com/watch?v=Mut_u40Sqz4&t=5272s), available on YouTube.
+
+The CartPole environment, part of the Gymnasium library, features a simple cart with a pole balanced on top. The cart can move left or right, and the goal is to keep the pole upright. Rewards are given for each time step the pole remains balanced. If the pole deviates more than 15 degrees from the vertical, the episode ends.
+
+In the following sections, I will walk you through the process of training an agent to keep the pole in equilibrium throughout a simulation of 200 time steps, and demonstrate the results using videos of both random and trained policies.
+
+!![Image : CartPole](../images/blog/post_18-09-24/cartopole.jpg){: style="width: 600px; height: 400px;"}
+
+
+
 
 ## Environment Setup
 
@@ -54,7 +64,7 @@ video_filename = '../images/blog/post_18-09-24/cartpole_random_policy.mp4'
 imageio.mimsave(video_filename, frames, fps=30)
 ```
 
-[Video: Random Agent](../images/blog/post_18-09-24/cartpole_random_policy.mp4)
+!![Video: Random Agent](../images/blog/post_18-09-24/cartpole_random_policy.mp4)
 
 
 ## Training the PPO Model
@@ -138,7 +148,7 @@ imageio.mimsave(video_filename, frames, fps=30)
 ```
 
 
-[Video: Trained Agent](../images/blog/post_18-09-24/cartpole_trained_agent.mp4)
+!![Video: Trained Agent](../images/blog/post_18-09-24/cartpole_trained_agent.mp4)
 
 
 ## Conclusion

@@ -53,7 +53,7 @@ include-in-header:
 
 <div class="content"> <!-- Content Wrapper -->
 
-# Who I am and what's this site
+# Who I am and what's this site (Disclaimer this page is still under construction!)
 
 Hi, I'm Matteo Aldovardi, a machine learning enthusiast and mathematician. This website is a combination of my blog and portfolio where I document my journey in data science, AI, and mathematics.
 

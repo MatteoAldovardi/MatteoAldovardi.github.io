@@ -3,4 +3,4 @@ title: "Posts by Date:"
 ---
 
 ### [September 11, 2024: Implementing K-Nearest Neighbor with Python](post_11-09-24.qmd)
-### [September 18, 2024: Implementing K-Nearest Neighbor with Python](post_18-09-24.qmd)
+### [Training and Visualizing a PPO Agent on CartPole using Stable Baselines3](post_18-09-24.qmd)

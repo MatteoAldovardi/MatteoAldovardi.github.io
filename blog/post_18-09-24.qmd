@@ -1,7 +1,7 @@
 
 ---
 title: "Training and Visualizing a PPO Agent on CartPole using Stable Baselines3"
-author: "Author Name"
+author: "Matteo Aldovardi"
 date: "2024-09-18"
 categories: ["Reinforcement Learning", "Stable Baselines3", "CartPole", "PPO"]
 ---

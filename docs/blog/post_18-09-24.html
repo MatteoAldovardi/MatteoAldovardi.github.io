@@ -195,7 +195,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This post details how to train a Proximal Policy Optimization (PPO) agent on the CartPole environment using the stable-baselines3 library and visualize the agent’s performance through video. This exercise replicates the methods demonstrated in Nicholas Renotte’s tutorial, <a href="https://www.youtube.com/watch?v=Mut_u40Sqz4&amp;t=5272s">“Reinforcement Learning in 3 Hours | Full Course using Python”</a>, available on YouTube.</p>
 <p>The CartPole environment, part of the Gymnasium library, features a simple cart with a pole balanced on top. The cart can move left or right, and the goal is to keep the pole upright. Rewards are given for each time step the pole remains balanced. If the pole deviates more than 15 degrees from the vertical, the episode ends.</p>
 <p>In the following sections, I will walk you through the process of training an agent to keep the pole in equilibrium throughout a simulation of 200 time steps, and demonstrate the results using videos of both random and trained policies.</p>
-<p>!<img src="../images/blog/post_18-09-24/cartopole.jpg" class="img-fluid" alt="Image : CartPole">{: style=“width: 600px; height: 400px;”}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/blog/post_18-09-24/cartopole.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption class="figure-caption">Image : CartPole</figcaption>
+</figure>
+</div>
 <section id="environment-setup" class="level2">
 <h2 class="anchored" data-anchor-id="environment-setup">Environment Setup</h2>
 <p>The following commands are required to set up the environment in Google Colab or a similar environment. These install <code>stable-baselines3</code>, OpenAI Gym (now Gymnasium), and additional tools for rendering and video recording:</p>
@@ -232,7 +237,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the video</span></span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>video_filename <span class="op">=</span> <span class="st">'../images/blog/post_18-09-24/cartpole_random_policy.mp4'</span></span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>imageio.mimsave(video_filename, frames, fps<span class="op">=</span><span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>!<video src="../images/blog/post_18-09-24/cartpole_random_policy.mp4" class="img-fluid" controls=""><a href="../images/blog/post_18-09-24/cartpole_random_policy.mp4">Video: Random Agent</a></video></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="../images/blog/post_18-09-24/cartpole_random_policy.mp4" class="img-fluid" controls=""><a href="../images/blog/post_18-09-24/cartpole_random_policy.mp4">Video</a></video></p>
+<figcaption class="figure-caption">Video: Random Agent</figcaption>
+</figure>
+</div>
 </section>
 <section id="training-the-ppo-model" class="level2">
 <h2 class="anchored" data-anchor-id="training-the-ppo-model">Training the PPO Model</h2>
@@ -301,7 +311,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the video</span></span>
 <span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>video_filename <span class="op">=</span> <span class="st">'../images/blog/post_18-09-24/cartpole_trained_agent.mp4'</span></span>
 <span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>imageio.mimsave(video_filename, frames, fps<span class="op">=</span><span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>!<video src="../images/blog/post_18-09-24/cartpole_trained_agent.mp4" class="img-fluid" controls=""><a href="../images/blog/post_18-09-24/cartpole_trained_agent.mp4">Video: Trained Agent</a></video></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="../images/blog/post_18-09-24/cartpole_trained_agent.mp4" class="img-fluid" controls=""><a href="../images/blog/post_18-09-24/cartpole_trained_agent.mp4">Video</a></video></p>
+<figcaption class="figure-caption">Video: Trained Agent</figcaption>
+</figure>
+</div>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>

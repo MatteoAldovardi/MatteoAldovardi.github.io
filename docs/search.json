@@ -119,6 +119,13 @@
     "text": "Credits\n\nK-Nearest Neighbors Algorithm:\nThis implementation was adapted from the tutorial provided by Jason Brownlee, “Tutorial to Implement k-Nearest Neighbors in Python from Scratch.”\nSource: Machine Learning Mastery\nIris Dataset:\nThe dataset used in this post is the famous Iris dataset. It is available through the Scikit-learn library.\nVisualizations:\nVisualizations were created using the Matplotlib library."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Site",
+    "section": "",
+    "text": "Artistic view of a bump function"
+  },
+  {
     "objectID": "index.html#recent-posts",
     "href": "index.html#recent-posts",
     "title": "Welcome to My Site",

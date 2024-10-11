@@ -9,7 +9,7 @@ format:
 ---
 
 ::: {#headbar layout-ncol=1}
-![Artistic view of a [bump function](https://en.wikipedia.org/wiki/Bump_function) ](images/banner.jpeg){width=100% height=300px}
+![Generate using DALLE3 with this prompt " Generate an image of a woman painting while sitting on a porch. The painting style should evoke the aesthetics of Dante Gabriel Rossetti and Raffaello, with a focus on rich, detailed, and romantic elements. The porch is surrounded by the vibrant, warm colors of an autumn landscape in Connecticut, featuring golden and red foliage. The overall atmosphere should feel serene and artistic, blending natural beauty with classical, Renaissance-inspired art. "](images/banner.jpeg){width=100% height=300px}
 :::
 
 # Purpose of This Site

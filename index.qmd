@@ -14,7 +14,7 @@ format:
 
 # Purpose of This Site
 
-Hello! I’m Matteo Aldovardi, a passionate machine learning enthusiast and mathematician. This website serves as both my blog and portfolio, where I share my journey in data science, AI, and mathematics.
+Hello! I'm Matteo Aldovardi, a dedicated machine learning enthusiast and mathematician. This site serves as my personal blog and portfolio, where I document my exploration of data science, AI, and mathematics, sharing insights, projects, and my learning journey along the way.
 
 ## Recent Posts
   - [Training and Visualizing a PPO Agent on CartPole using Stable Baselines3](blog/post_18-09-24.qmd)

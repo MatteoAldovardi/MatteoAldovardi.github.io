@@ -142,50 +142,29 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Me",
+    "title": "",
     "section": "",
-    "text": "I graduated with a degree in Mathematics in October 2022. My thesis, titled La teoria di Payley Littlewood e alcune sue applicazioni in analisi, focused on Harmonic Analysis and resulted in a published article in the Bollettino Unione Matematica Italiana. In the article, “A Note on the Fractional Hardy Inequality”, my thesis supervisor and I present a minor enhancement of Hardy’s inequality. Since graduation, I have developed an interest in machine learning, completing online courses including Andrew Ng’s Machine Learning Specialization.\n\n\n\nIn 2023, I began the Master in Mathematical and Physical Methods program, where I am expanding my expertise in mathematical modeling techniques.\n\n\n\nDuring the MPM Master, I undertook a curricular internship at Leonardo Divisione Velivoli, Corso Francia, 426, 10146 Torino, where I worked on computer vision and 3D deep learning. This role provided me with hands-on experience in cutting-edge technologies and allowed me to apply my mathematical knowledge to practical problems.\n\n\n\n\nArticle: “A Note on the Fractional Hardy Inequality” published in Bollettino Unione Matematica Italiana (2023): Read the article\n\n\n\n\nYou can reach me via email or connect with me on LinkedIn.\n\n\n\nMy CV is available for download here."
+    "text": "I began my academic journey with a Bachelor’s degree in Mathematics, completed in 2018, focusing on algebra, calculus, and probability. My thesis explored the Implicit Function Theorem. In 2022, I went on to earn a Master’s degree in Mathematics, with a thesis titled La teoria di Payley Littlewood e alcune sue applicazioni in analisi, focusing on Harmonic Analysis. Together with my thesis supervisor, we co-authored the article A Note on the Fractional Hardy Inequality, which presents a minor enhancement of Hardy’s inequality and was published in the Bollettino Unione Matematica Italiana.\nIn October 2024, I completed a second Master’s degree in Mathematical and Physical Methods (MPM), further developing my skills in mathematical modeling and broadening my understanding of applied mathematics.\n\n\n\nAs part of the MPM program, I completed a curricular internship at Leonardo Divisione Velivoli, Corso Francia, 426, 10146 Torino. There, I worked on computer vision and 3D deep learning projects, gaining practical experience with cutting-edge technologies and applying my mathematical expertise to solve real-world challenges.\n\n\n\nI am actively seeking a junior position or internship as a data analyst or machine learning practitioner, with a particular interest in applying mathematical and data-driven methods to real-world problems.\n\n\n\n\nArticle: “A Note on the Fractional Hardy Inequality” published in Bollettino Unione Matematica Italiana (2023): Read the article"
   },
   {
-    "objectID": "about.html#academic-background",
-    "href": "about.html#academic-background",
-    "title": "About Me",
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "",
     "section": "",
-    "text": "I graduated with a degree in Mathematics in October 2022. My thesis, titled La teoria di Payley Littlewood e alcune sue applicazioni in analisi, focused on Harmonic Analysis and resulted in a published article in the Bollettino Unione Matematica Italiana. In the article, “A Note on the Fractional Hardy Inequality”, my thesis supervisor and I present a minor enhancement of Hardy’s inequality. Since graduation, I have developed an interest in machine learning, completing online courses including Andrew Ng’s Machine Learning Specialization."
-  },
-  {
-    "objectID": "about.html#current-studies",
-    "href": "about.html#current-studies",
-    "title": "About Me",
-    "section": "",
-    "text": "In 2023, I began the Master in Mathematical and Physical Methods program, where I am expanding my expertise in mathematical modeling techniques."
-  },
-  {
-    "objectID": "about.html#professional-experience",
-    "href": "about.html#professional-experience",
-    "title": "About Me",
-    "section": "",
-    "text": "During the MPM Master, I undertook a curricular internship at Leonardo Divisione Velivoli, Corso Francia, 426, 10146 Torino, where I worked on computer vision and 3D deep learning. This role provided me with hands-on experience in cutting-edge technologies and allowed me to apply my mathematical knowledge to practical problems."
-  },
-  {
-    "objectID": "about.html#selected-publications-and-projects",
-    "href": "about.html#selected-publications-and-projects",
-    "title": "About Me",
-    "section": "",
-    "text": "Article: “A Note on the Fractional Hardy Inequality” published in Bollettino Unione Matematica Italiana (2023): Read the article"
+    "text": "I began my academic journey with a Bachelor’s degree in Mathematics, completed in 2018, focusing on algebra, calculus, and probability. My thesis explored the Implicit Function Theorem. In 2022, I went on to earn a Master’s degree in Mathematics, with a thesis titled La teoria di Payley Littlewood e alcune sue applicazioni in analisi, focusing on Harmonic Analysis. Together with my thesis supervisor, we co-authored the article A Note on the Fractional Hardy Inequality, which presents a minor enhancement of Hardy’s inequality and was published in the Bollettino Unione Matematica Italiana.\nIn October 2024, I completed a second Master’s degree in Mathematical and Physical Methods (MPM), further developing my skills in mathematical modeling and broadening my understanding of applied mathematics.\n\n\n\nAs part of the MPM program, I completed a curricular internship at Leonardo Divisione Velivoli, Corso Francia, 426, 10146 Torino. There, I worked on computer vision and 3D deep learning projects, gaining practical experience with cutting-edge technologies and applying my mathematical expertise to solve real-world challenges.\n\n\n\nI am actively seeking a junior position or internship as a data analyst or machine learning practitioner, with a particular interest in applying mathematical and data-driven methods to real-world problems.\n\n\n\n\nArticle: “A Note on the Fractional Hardy Inequality” published in Bollettino Unione Matematica Italiana (2023): Read the article"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
-    "title": "About Me",
-    "section": "",
-    "text": "You can reach me via email or connect with me on LinkedIn."
+    "title": "",
+    "section": "Contact",
+    "text": "Contact\nYou can reach me via email or connect with me on LinkedIn."
   },
   {
     "objectID": "about.html#download-cv",
     "href": "about.html#download-cv",
-    "title": "About Me",
-    "section": "",
-    "text": "My CV is available for download here."
+    "title": "",
+    "section": "Download CV",
+    "text": "Download CV\nMy CV is available for download here."
   }
 ]

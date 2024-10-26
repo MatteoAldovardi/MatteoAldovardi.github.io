@@ -14,7 +14,7 @@ format:
 
 # Purpose of This Site
 
-Hello! I'm Matteo Aldovardi, a dedicated machine learning enthusiast and mathematician. This site serves as my personal blog and portfolio, where I document my exploration of data science, AI, and mathematics, sharing insights, projects, and my learning journey along the way. Check out my [portfolio](portfolio.qmd) for projects and examples of my work, or visit my [blog](blog.qmd) for insights and updates on my latest explorations.
+Hello! I'm Matteo Aldovardi, a dedicated machine learning enthusiast and mathematician. This site serves as my personal blog and portfolio, where I document my exploration of data science, AI, and mathematics, sharing insights, projects, and my learning journey along the way. Check out my [portfolio](portfolio.qmd) for projects and examples of my work, or visit my [blog](blog/index.qmd) for insights and updates on my latest explorations.
 
 
 ## Recent Posts

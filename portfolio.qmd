@@ -2,9 +2,10 @@
 title: "My Portfolio"
 ---
 
-Here are some of the key projects and publications I worked on:
+Here are some of the key projects and publications I’ve worked on:
 
-- **Project 1**: [Interniship with Leonardo in the field of 3D DeepLearning](https://github.com/yourusername/project2)
+- **Project 1**: Internship with Leonardo in 3D Deep Learning  
+  As part of the [Master's in Mathematical and Physical Models for Engineering](https://www.dipmatematica.unito.it/do/home.pl/View?doc=/master/Master_MPM_Space_Sciences.html&sb=0#:~:text=The%20Master%20in%20Mathematical%20and%20physical), I completed a curricular internship at Leonardo Divisione Velivoli, in Turin. During this time, I worked on computer vision and 3D deep learning projects, gaining hands-on experience with advanced technologies and leveraging my mathematical expertise to tackle practical challenges in real-world applications.
 
-- **Publication**: [A note about Hardy's inequality for Pseudo-Differential Operators](https://github.com/yourusername/project1)
-
+- **Publication**: [A Note on Hardy's Inequality for Pseudo-Differential Operators](https://etd.adm.unipi.it/theses/available/etd-10012022-110009/)  
+  This publication explores applications of Hardy's inequality within the realm of pseudo-differential operators, contributing insights into mathematical analysis and operator theory.

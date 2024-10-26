@@ -3,7 +3,6 @@ title: "My Portfolio"
 ---
 
 Here are some of the key projects and publications I worked on:
-
+- **Project 1**: [Interniship with Leonardo in the field of 3D DeepLearning](https://github.com/yourusername/project2)
 - **Publication**: [A note about Hardy's inequality for Pseudo-Differential Operators](https://github.com/yourusername/project1)
-- **Project 2**: [Interniship with Leonardo in the field of 3D DeepLearning](https://github.com/yourusername/project2)
 

@@ -7,6 +7,8 @@ website:
     left:              # Left side of the navigation bar
       - text: "Home" 
         href: index.qmd
+      - text: "Portfolio"
+        href: portfolio.qmd
       - text: "Blog"
         href: blog/index.qmd
       - text: "About Me"

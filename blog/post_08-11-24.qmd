@@ -1,0 +1,22 @@
+---
+title: "Understanding PCA with the Olivetti Faces Dataset"
+author: "Matteo Aldovardi"
+date: "2024-11-08"
+categories: ["machine learning", "PCA", "data analysis"]
+---
+
+# PCA Implementation and Comparison with sklearn
+
+In this notebook, I explore Principal Component Analysis (PCA) using the Olivetti Faces dataset, which is available through the `sklearn` library.
+
+In the first part, I apply PCA using the official `sklearn` implementation to compress one of the images in the dataset into a subspace defined by eigenvectors that explain 90% of the variance. The result is visualized for comparison. The code for this section is taken directly from the official `sklearn` website and is licensed under the BSD 3-Clause License. The full license text, including the copyright notice and disclaimer, is included in the source code provided.
+
+In the second part, I implement a basic, custom version of PCA and apply it to compress the same image into a subspace defined by the eigenvectors that explain 90% of the variance. I then compare the results of this custom (naive) implementation with those obtained using the `sklearn` PCA algorithm.
+
+**License Information:**
+The code from the official `sklearn` website, used in the first part of this notebook, is licensed under the BSD 3-Clause License. The full text of the license can be found below.
+
+
+
+
+

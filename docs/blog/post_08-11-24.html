@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Matteo Aldovardi">
+<meta name="dcterms.date" content="2024-11-08">
 
-<title>Posts by Date:</title>
+<title>Understanding PCA with the Olivetti Faces Dataset</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../blog/index.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -129,14 +131,31 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Posts by Date:</h1>
-</div>
+<h1 class="title">Understanding PCA with the Olivetti Faces Dataset</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">machine learning</div>
+    <div class="quarto-category">PCA</div>
+    <div class="quarto-category">data analysis</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Matteo Aldovardi </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 8, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -144,11 +163,12 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="september-11-2024-implementing-k-nearest-neighbor-with-python" class="level3">
-<h3 class="anchored" data-anchor-id="september-11-2024-implementing-k-nearest-neighbor-with-python"><a href="../blog/post_11-09-24.html">September 11, 2024: Implementing K-Nearest Neighbor with Python</a></h3>
-</section>
-<section id="training-and-visualizing-a-ppo-agent-on-cartpole-using-stable-baselines3" class="level3">
-<h3 class="anchored" data-anchor-id="training-and-visualizing-a-ppo-agent-on-cartpole-using-stable-baselines3"><a href="../blog/post_18-09-24.html">Training and Visualizing a PPO Agent on CartPole using Stable Baselines3</a></h3>
+<section id="pca-implementation-and-comparison-with-sklearn" class="level1">
+<h1>PCA Implementation and Comparison with sklearn</h1>
+<p>In this notebook, I explore Principal Component Analysis (PCA) using the Olivetti Faces dataset, which is available through the <code>sklearn</code> library.</p>
+<p>In the first part, I apply PCA using the official <code>sklearn</code> implementation to compress one of the images in the dataset into a subspace defined by eigenvectors that explain 90% of the variance. The result is visualized for comparison. The code for this section is taken directly from the official <code>sklearn</code> website and is licensed under the BSD 3-Clause License. The full license text, including the copyright notice and disclaimer, is included in the source code provided.</p>
+<p>In the second part, I implement a basic, custom version of PCA and apply it to compress the same image into a subspace defined by the eigenvectors that explain 90% of the variance. I then compare the results of this custom (naive) implementation with those obtained using the <code>sklearn</code> PCA algorithm.</p>
+<p><strong>License Information:</strong> The code from the official <code>sklearn</code> website, used in the first part of this notebook, is licensed under the BSD 3-Clause License. The full text of the license can be found below.</p>
 
 
 </section>

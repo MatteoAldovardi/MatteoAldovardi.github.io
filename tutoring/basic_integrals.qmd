@@ -16,6 +16,8 @@ $$
 \int f(x)\,dx
 $$
 
+
+
 ### 1.1 Power Rule
 
 The integral of \( x^n \), where \( n \neq -1 \), is given by:

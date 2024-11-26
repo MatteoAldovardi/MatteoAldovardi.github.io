@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matteo Aldovardi">
 
-<title>Basic Integrals</title>
+<title>basic_integrals</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,150 +129,103 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Basic Integrals</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Matteo Aldovardi </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-</header>
-
+<p>title: “Basic Integrals”<br>
+author: “Matteo Aldovardi”</p>
+<hr>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Integrals are a fundamental concept in calculus. In this document, we’ll explore various types of basic integrals, their properties, and examples.</p>
 </section>
 <section id="indefinite-integrals" class="level2">
 <h2 class="anchored" data-anchor-id="indefinite-integrals">1. <strong>Indefinite Integrals</strong></h2>
-<p>An indefinite integral represents a family of functions that have the same derivative. It is denoted as:</p>
+<p>An indefinite integral represents a family of functions that share the same derivative. It is denoted as:</p>
 <p><span class="math display">\[
 \int f(x)\,dx
 \]</span></p>
-<section id="power-rule" class="level3">
-<h3 class="anchored" data-anchor-id="power-rule">1.1 Power Rule</h3>
-<p>The integral of ( x^n ), where ( n ), is given by:</p>
+<p>For example:</p>
 <p><span class="math display">\[
-\int x^n \, dx = \frac{x^{n+1}}{n+1} + C
+\int \frac{1}{1+x^2} \, dx = \arctan(x) + C.
 \]</span></p>
-<section id="example" class="level4">
-<h4 class="anchored" data-anchor-id="example">Example:</h4>
+<section id="substitution" class="level3">
+<h3 class="anchored" data-anchor-id="substitution">Substitution:</h3>
+<p>The substitution rule states:</p>
 <p><span class="math display">\[
-\int x^3 \, dx = \frac{x^4}{4} + C
+\int f(g(x)) \cdot g'(x) \, dx = \int f(u) \, du.
+\]</span></p>
+<p>This formula becomes easier to remember if you write <span class="math inline">\(u(x)\)</span> in place of <span class="math inline">\(g(x)\)</span>, using the same letter to denote both the function and the variable. Formally, we can write:</p>
+<p><span class="math display">\[
+\int f(u(x)) \cdot \frac{d u}{d x} \, dx = \int f(u) \, du.
+\]</span></p>
+<p>The <span class="math inline">\(dx\)</span> terms seem to “cancel,” though this is a <em>formal passage</em>—not rigorous, but effective. Similarly, manipulations in specific examples often rely on such formal simplifications.</p>
+<p><strong>What does “formally” mean?</strong><br>
+In mathematics, <em>formal</em> reasoning involves symbolic manipulations that follow established rules without delving into deeper, rigorous definitions. For instance, treating <span class="math inline">\(dx\)</span> as if it were a fraction or “canceling” terms may not be strictly defined but is consistent with the final, rigorous result.</p>
+</section>
+<section id="practical-example" class="level3">
+<h3 class="anchored" data-anchor-id="practical-example">Practical Example:</h3>
+<p>Evaluate the integral:</p>
+<p><span class="math display">\[
+\int \frac{6 \cdot x}{1 + 9 \cdot x^4} \, dx.
+\]</span></p>
+<p>Using the substitution <span class="math inline">\(u = 3 \cdot x^2\)</span>, we compute <span class="math inline">\(\frac{du}{dx} = 6 \cdot x\)</span>. Formally, multiplying through by <span class="math inline">\(dx\)</span> and dividing by <span class="math inline">\(6 \cdot x\)</span> gives:</p>
+<p><span class="math display">\[
+dx = \frac{du}{6 \cdot x}.
+\]</span></p>
+<p>Substituting <strong>formally</strong> into the integral, we proceed as follows:</p>
+<p><span class="math display">\[
+\int \frac{6x}{1 + (3 \cdot x^2)^2} \, dx = \int \frac{6 \cdot x}{1 + u^2} \, dx
+= \int \frac{6 \cdot x}{1 + u^2} \cdot \frac{1}{6 \cdot x} \, du = \int \frac{1}{1 + u^2} \, du.
+\]</span></p>
+<p>Finally:</p>
+<p><span class="math display">\[
+\int \frac{du}{1 + u^2} = \arctan(u) + C = \arctan(3 \cdot x^2) + C.
 \]</span></p>
 </section>
 </section>
-<section id="exponential-functions" class="level3">
-<h3 class="anchored" data-anchor-id="exponential-functions">1.2 Exponential Functions</h3>
-<p>The integral of an exponential function with base ( e ) is:</p>
-<p><span class="math display">\[
-\int e^x \, dx = e^x + C
-\]</span></p>
-<section id="example-1" class="level4">
-<h4 class="anchored" data-anchor-id="example-1">Example:</h4>
-<p><span class="math display">\[
-\int e^x \, dx = e^x + C
-\]</span></p>
+<section id="warnings" class="level2">
+<h2 class="anchored" data-anchor-id="warnings">Warnings:</h2>
+<p>The steps above involve <em>formal passages</em> because:<br>
+- The nature of <span class="math inline">\(dx\)</span> and <span class="math inline">\(du\)</span> is not rigorously defined.<br>
+- Division by terms like <span class="math inline">\(6 \cdot x\)</span> implicitly assumes <span class="math inline">\(\frac{du}{dx} \neq 0\)</span>.</p>
+<p>These manipulations simplify computations but should be justified rigorously in more advanced contexts.</p>
 </section>
-</section>
-<section id="trigonometric-functions" class="level3">
-<h3 class="anchored" data-anchor-id="trigonometric-functions">1.3 Trigonometric Functions</h3>
-<ul>
-<li><p><strong>Sine function</strong>: <span class="math display">\[
-\int \sin(x) \, dx = -\cos(x) + C
-\]</span></p></li>
-<li><p><strong>Cosine function</strong>: <span class="math display">\[
-\int \cos(x) \, dx = \sin(x) + C
-\]</span></p></li>
-</ul>
-<section id="example-2" class="level4">
-<h4 class="anchored" data-anchor-id="example-2">Example:</h4>
-<p><span class="math display">\[
-\int \sin(x) \, dx = -\cos(x) + C
+<section id="a-sketch-of-the-proof-of-the-change-of-variable-formula" class="level2">
+<h2 class="anchored" data-anchor-id="a-sketch-of-the-proof-of-the-change-of-variable-formula">A sketch of the proof of the Change of Variable Formula:</h2>
+<p>Let <span class="math inline">\(F(u)\)</span> be a primitive of <span class="math inline">\(f(u)\)</span>, meaning <span class="math inline">\(F'(u) = f(u)\)</span>. Then, by the definition of an indefinite integral, we can write <span class="math display">\[
+F(u) = \int f(u) \, du.
 \]</span></p>
-</section>
-</section>
-</section>
-<section id="definite-integrals" class="level2">
-<h2 class="anchored" data-anchor-id="definite-integrals">2. <strong>Definite Integrals</strong></h2>
-<p>A definite integral represents the area under a curve between two bounds. It is expressed as:</p>
+<p>But since <span class="math inline">\(u = u(x)\)</span>, it is also true that <span class="math inline">\(F(u) = F(u(x))\)</span>. By differentiating with respect to <span class="math inline">\(x\)</span>, we obtain</p>
 <p><span class="math display">\[
-\int_a^b f(x)\,dx
-\]</span></p>
-<section id="example-of-definite-integral" class="level3">
-<h3 class="anchored" data-anchor-id="example-of-definite-integral">2.1 Example of Definite Integral</h3>
-<p>To compute the area under the curve ( y = x^2 ) from ( x = 0 ) to ( x = 1 ):</p>
+\frac{d}{dx} F(u(x)) = \frac{d F}{d u} \cdot \frac{d u}{dx} = f(u(x)) \cdot \frac{du}{dx}.
+\]</span> Thus, <span class="math inline">\(F(u(x))\)</span> is a primitive of the function</p>
 <p><span class="math display">\[
-\int_0^1 x^2 \, dx = \left[\frac{x^3}{3}\right]_0^1 = \frac{1}{3} - 0 = \frac{1}{3}
-\]</span></p>
-<p>This represents the area under the curve from ( x = 0 ) to ( x = 1 ).</p>
-</section>
-</section>
-<section id="integration-by-substitution" class="level2">
-<h2 class="anchored" data-anchor-id="integration-by-substitution">3. <strong>Integration by Substitution</strong></h2>
-<p>When faced with complex integrals, we often use substitution to simplify the process. The substitution rule states:</p>
+f(u(x)) \cdot \frac{d u}{dx},
+\]</span> or equivalently,</p>
 <p><span class="math display">\[
-\int f(g(x)) g'(x) \, dx = \int f(u) \, du
-\]</span></p>
-<section id="example-of-substitution" class="level3">
-<h3 class="anchored" data-anchor-id="example-of-substitution">3.1 Example of Substitution</h3>
-<p>Let’s solve the following integral using substitution:</p>
+F(u(x)) = \int f(u(x)) \cdot \frac{d u}{dx} \, dx.
+\]</span> Finally, we conclude using the following chain of equalities:</p>
 <p><span class="math display">\[
-\int 2x \cos(x^2) \, dx
+\int f(u) \, du = F(u) = F(u(x)) = \int f(u(x)) \cdot \frac{d u}{dx} \, dx.
 \]</span></p>
-<p>Let ( u = x^2 ), then ( du = 2x , dx ). The integral becomes:</p>
+<section id="footnote" class="level3">
+<h3 class="anchored" data-anchor-id="footnote">Footnote:</h3>
+<p>I am aware that indefinite integrals can be misleading, as they might lead students to believe that the only primitives of</p>
 <p><span class="math display">\[
-\int \cos(u) \, du = \sin(u) + C = \sin(x^2) + C
+\frac{1}{x}
 \]</span></p>
-<p>Thus, the result is:</p>
+<p>are functions of the form</p>
 <p><span class="math display">\[
-\int 2x \cos(x^2) \, dx = \sin(x^2) + C
+\ln(\vert x \vert ) + C.
 \]</span></p>
-</section>
-</section>
-<section id="integration-by-parts" class="level2">
-<h2 class="anchored" data-anchor-id="integration-by-parts">4. <strong>Integration by Parts</strong></h2>
-<p>The integration by parts formula is derived from the product rule for derivatives. It is given by:</p>
+<p>Indeed, it is common to write:</p>
 <p><span class="math display">\[
-\int u \, dv = uv - \int v \, du
+\int \frac{1}{x} \, dx = \ln (\vert x \vert ) + C.
 \]</span></p>
-<section id="example-of-integration-by-parts" class="level3">
-<h3 class="anchored" data-anchor-id="example-of-integration-by-parts">4.1 Example of Integration by Parts</h3>
-<p>To solve the integral ( x e^x , dx ), we let:</p>
-<ul>
-<li>( u = x ) (so ( du = dx ))</li>
-<li>( dv = e^x , dx ) (so ( v = e^x ))</li>
-</ul>
-<p>Using the integration by parts formula:</p>
-<p><span class="math display">\[
-\int x e^x \, dx = x e^x - \int e^x \, dx = x e^x - e^x + C
-\]</span></p>
-<p>Thus:</p>
-<p><span class="math display">\[
-\int x e^x \, dx = e^x(x - 1) + C
-\]</span></p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>In this document, we covered a variety of basic integrals, including indefinite and definite integrals, and methods such as substitution and integration by parts. These techniques are fundamental for solving a wide range of problems in calculus and beyond.</p>
-<hr>
-<p><em>Note: For interactive exercises, consider adding widgets or Python code with Quarto, but this document is focused on basic examples and theoretical understanding of integrals.</em></p>
+<p>At an introductory high school level, my goal is to keep things as straightforward as possible. This topic might be explored in another post about derivatives defined on intervals.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

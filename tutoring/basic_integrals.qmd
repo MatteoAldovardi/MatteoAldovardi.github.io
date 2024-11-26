@@ -1,7 +1,5 @@
----
-title: "Basic Integrals"
-author: "Matteo Aldovardi"
-format: html
+title: "Basic Integrals"  
+author: "Matteo Aldovardi"  
 ---
 
 ## Introduction
@@ -10,134 +8,122 @@ Integrals are a fundamental concept in calculus. In this document, we'll explore
 
 ## 1. **Indefinite Integrals**
 
-An indefinite integral represents a family of functions that have the same derivative. It is denoted as:
+An indefinite integral represents a family of functions that share the same derivative. It is denoted as:
 
 $$
 \int f(x)\,dx
 $$
 
-
-
-### 1.1 Power Rule
-
-The integral of \( x^n \), where \( n \neq -1 \), is given by:
+For example:  
 
 $$
-\int x^n \, dx = \frac{x^{n+1}}{n+1} + C
+\int \frac{1}{1+x^2} \, dx = \arctan(x) + C.
 $$
 
-#### Example:
-$$
-\int x^3 \, dx = \frac{x^4}{4} + C
-$$
+### Substitution:
 
-### 1.2 Exponential Functions
-
-The integral of an exponential function with base \( e \) is:
+The substitution rule states:  
 
 $$
-\int e^x \, dx = e^x + C
+\int f(g(x)) \cdot g'(x) \, dx = \int f(u) \, du.
 $$
 
-#### Example:
-$$
-\int e^x \, dx = e^x + C
-$$
-
-### 1.3 Trigonometric Functions
-
-- **Sine function**:
-$$
-\int \sin(x) \, dx = -\cos(x) + C
-$$
-
-- **Cosine function**:
-$$
-\int \cos(x) \, dx = \sin(x) + C
-$$
-
-#### Example:
-$$
-\int \sin(x) \, dx = -\cos(x) + C
-$$
-
-## 2. **Definite Integrals**
-
-A definite integral represents the area under a curve between two bounds. It is expressed as:
+This formula becomes easier to remember if you write $u(x)$ in place of $g(x)$, using the same letter to denote both the function and the variable. Formally, we can write:
 
 $$
-\int_a^b f(x)\,dx
+\int f(u(x)) \cdot \frac{d u}{d x} \, dx = \int f(u) \, du.
 $$
 
-### 2.1 Example of Definite Integral
+The $dx$ terms seem to "cancel," though this is a *formal passage*—not rigorous, but effective. Similarly, manipulations in specific examples often rely on such formal simplifications.
 
-To compute the area under the curve \( y = x^2 \) from \( x = 0 \) to \( x = 1 \):
+**What does "formally" mean?**  
+In mathematics, *formal* reasoning involves symbolic manipulations that follow established rules without delving into deeper, rigorous definitions. For instance, treating $dx$ as if it were a fraction or "canceling" terms may not be strictly defined but is consistent with the final, rigorous result.
 
-$$
-\int_0^1 x^2 \, dx = \left[\frac{x^3}{3}\right]_0^1 = \frac{1}{3} - 0 = \frac{1}{3}
-$$
+### Practical Example:
 
-This represents the area under the curve from \( x = 0 \) to \( x = 1 \).
-
-## 3. **Integration by Substitution**
-
-When faced with complex integrals, we often use substitution to simplify the process. The substitution rule states:
+Evaluate the integral:
 
 $$
-\int f(g(x)) g'(x) \, dx = \int f(u) \, du
+\int \frac{6 \cdot x}{1 + 9 \cdot x^4} \, dx.
 $$
 
-### 3.1 Example of Substitution
-
-Let's solve the following integral using substitution:
+Using the substitution $u = 3 \cdot x^2$, we compute $\frac{du}{dx} = 6 \cdot x$. Formally, multiplying through by $dx$ and dividing by $6 \cdot x$ gives:
 
 $$
-\int 2x \cos(x^2) \, dx
+dx = \frac{du}{6 \cdot x}.
 $$
 
-Let \( u = x^2 \), then \( du = 2x \, dx \). The integral becomes:
+Substituting **formally** into the integral, we proceed as follows:
 
 $$
-\int \cos(u) \, du = \sin(u) + C = \sin(x^2) + C
+\int \frac{6x}{1 + (3 \cdot x^2)^2} \, dx = \int \frac{6 \cdot x}{1 + u^2} \, dx 
+= \int \frac{6 \cdot x}{1 + u^2} \cdot \frac{1}{6 \cdot x} \, du = \int \frac{1}{1 + u^2} \, du.
 $$
 
-Thus, the result is:
+Finally:
 
 $$
-\int 2x \cos(x^2) \, dx = \sin(x^2) + C
+\int \frac{du}{1 + u^2} = \arctan(u) + C = \arctan(3 \cdot x^2) + C.
 $$
 
-## 4. **Integration by Parts**
+## Warnings:
 
-The integration by parts formula is derived from the product rule for derivatives. It is given by:
+The steps above involve *formal passages* because:  
+- The nature of $dx$ and $du$ is not rigorously defined.  
+- Division by terms like $6 \cdot x$ implicitly assumes $\frac{du}{dx} \neq 0$.  
 
+These manipulations simplify computations but should be justified rigorously in more advanced contexts.
+
+
+
+## A sketch of the proof of the Change of Variable Formula:
+
+Let $F(u)$ be a primitive of $f(u)$, meaning $F'(u) = f(u)$. Then, by the definition of an indefinite integral, we can write
 $$
-\int u \, dv = uv - \int v \, du
-$$
-
-### 4.1 Example of Integration by Parts
-
-To solve the integral \( \int x e^x \, dx \), we let:
-
-- \( u = x \) (so \( du = dx \))
-- \( dv = e^x \, dx \) (so \( v = e^x \))
-
-Using the integration by parts formula:
-
-$$
-\int x e^x \, dx = x e^x - \int e^x \, dx = x e^x - e^x + C
+F(u) = \int f(u) \, du.
 $$
 
-Thus:
+But since $u = u(x)$, it is also true that $F(u) = F(u(x))$.
+By differentiating with respect to $x$, we obtain
 
 $$
-\int x e^x \, dx = e^x(x - 1) + C
+\frac{d}{dx} F(u(x)) = \frac{d F}{d u} \cdot \frac{d u}{dx} = f(u(x)) \cdot \frac{du}{dx}.
+$$
+Thus, $F(u(x))$ is a primitive of the function
+
+$$
+f(u(x)) \cdot \frac{d u}{dx},
+$$
+or equivalently,
+
+$$
+F(u(x)) = \int f(u(x)) \cdot \frac{d u}{dx} \, dx.
+$$
+Finally, we conclude using the following chain of equalities:
+
+$$
+\int f(u) \, du = F(u) = F(u(x)) = \int f(u(x)) \cdot \frac{d u}{dx} \, dx.
 $$
 
-## Conclusion
 
-In this document, we covered a variety of basic integrals, including indefinite and definite integrals, and methods such as substitution and integration by parts. These techniques are fundamental for solving a wide range of problems in calculus and beyond.
+### Footnote:
 
----
+I am aware that indefinite integrals can be misleading, as they might lead students to believe that the only primitives of  
 
-*Note: For interactive exercises, consider adding widgets or Python code with Quarto, but this document is focused on basic examples and theoretical understanding of integrals.*
+$$ 
+\frac{1}{x} 
+$$  
+
+are functions of the form  
+
+$$ 
+\ln(\vert x \vert ) + C. 
+$$  
+
+Indeed, it is common to write:  
+
+$$ 
+\int \frac{1}{x} \, dx = \ln (\vert x \vert ) + C. 
+$$  
+
+At an introductory high school level, my goal is to keep things as straightforward as possible. This topic might be explored in another post about derivatives defined on intervals.

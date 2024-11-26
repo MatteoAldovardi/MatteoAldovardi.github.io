@@ -133,36 +133,36 @@
     "text": "Recent Posts\n\nTraining and Visualizing a PPO Agent on CartPole using Stable Baselines3\nImplementing K-Nearest Neighbor with Python"
   },
   {
-    "objectID": "tutoring/basic_integrals.html",
-    "href": "tutoring/basic_integrals.html",
+    "objectID": "tutoring/change_of_variables_in_indefinite_integrals.html",
+    "href": "tutoring/change_of_variables_in_indefinite_integrals.html",
     "title": "",
     "section": "",
     "text": "title: “Basic Integrals”\nauthor: “Matteo Aldovardi”"
   },
   {
-    "objectID": "tutoring/basic_integrals.html#introduction",
-    "href": "tutoring/basic_integrals.html#introduction",
+    "objectID": "tutoring/change_of_variables_in_indefinite_integrals.html#introduction",
+    "href": "tutoring/change_of_variables_in_indefinite_integrals.html#introduction",
     "title": "",
     "section": "Introduction",
     "text": "Introduction\nIntegrals are a fundamental concept in calculus. In this document, we’ll explore various types of basic integrals, their properties, and examples."
   },
   {
-    "objectID": "tutoring/basic_integrals.html#indefinite-integrals",
-    "href": "tutoring/basic_integrals.html#indefinite-integrals",
+    "objectID": "tutoring/change_of_variables_in_indefinite_integrals.html#indefinite-integrals",
+    "href": "tutoring/change_of_variables_in_indefinite_integrals.html#indefinite-integrals",
     "title": "",
     "section": "1. Indefinite Integrals",
     "text": "1. Indefinite Integrals\nAn indefinite integral represents a family of functions that share the same derivative. It is denoted as:\n\\[\n\\int f(x)\\,dx\n\\]\nFor example:\n\\[\n\\int \\frac{1}{1+x^2} \\, dx = \\arctan(x) + C.\n\\]\n\nSubstitution:\nThe substitution rule states:\n\\[\n\\int f(g(x)) \\cdot g'(x) \\, dx = \\int f(u) \\, du.\n\\]\nThis formula becomes easier to remember if you write \\(u(x)\\) in place of \\(g(x)\\), using the same letter to denote both the function and the variable. Formally, we can write:\n\\[\n\\int f(u(x)) \\cdot \\frac{d u}{d x} \\, dx = \\int f(u) \\, du.\n\\]\nThe \\(dx\\) terms seem to “cancel,” though this is a formal passage—not rigorous, but effective. Similarly, manipulations in specific examples often rely on such formal simplifications.\nWhat does “formally” mean?\nIn mathematics, formal reasoning involves symbolic manipulations that follow established rules without delving into deeper, rigorous definitions. For instance, treating \\(dx\\) as if it were a fraction or “canceling” terms may not be strictly defined but is consistent with the final, rigorous result.\n\n\nPractical Example:\nEvaluate the integral:\n\\[\n\\int \\frac{6 \\cdot x}{1 + 9 \\cdot x^4} \\, dx.\n\\]\nUsing the substitution \\(u = 3 \\cdot x^2\\), we compute \\(\\frac{du}{dx} = 6 \\cdot x\\). Formally, multiplying through by \\(dx\\) and dividing by \\(6 \\cdot x\\) gives:\n\\[\ndx = \\frac{du}{6 \\cdot x}.\n\\]\nSubstituting formally into the integral, we proceed as follows:\n\\[\n\\int \\frac{6x}{1 + (3 \\cdot x^2)^2} \\, dx = \\int \\frac{6 \\cdot x}{1 + u^2} \\, dx\n= \\int \\frac{6 \\cdot x}{1 + u^2} \\cdot \\frac{1}{6 \\cdot x} \\, du = \\int \\frac{1}{1 + u^2} \\, du.\n\\]\nFinally:\n\\[\n\\int \\frac{du}{1 + u^2} = \\arctan(u) + C = \\arctan(3 \\cdot x^2) + C.\n\\]"
   },
   {
-    "objectID": "tutoring/basic_integrals.html#warnings",
-    "href": "tutoring/basic_integrals.html#warnings",
+    "objectID": "tutoring/change_of_variables_in_indefinite_integrals.html#warnings",
+    "href": "tutoring/change_of_variables_in_indefinite_integrals.html#warnings",
     "title": "",
     "section": "Warnings:",
     "text": "Warnings:\nThe steps above involve formal passages because:\n- The nature of \\(dx\\) and \\(du\\) is not rigorously defined.\n- Division by terms like \\(6 \\cdot x\\) implicitly assumes \\(\\frac{du}{dx} \\neq 0\\).\nThese manipulations simplify computations but should be justified rigorously in more advanced contexts."
   },
   {
-    "objectID": "tutoring/basic_integrals.html#a-sketch-of-the-proof-of-the-change-of-variable-formula",
-    "href": "tutoring/basic_integrals.html#a-sketch-of-the-proof-of-the-change-of-variable-formula",
+    "objectID": "tutoring/change_of_variables_in_indefinite_integrals.html#a-sketch-of-the-proof-of-the-change-of-variable-formula",
+    "href": "tutoring/change_of_variables_in_indefinite_integrals.html#a-sketch-of-the-proof-of-the-change-of-variable-formula",
     "title": "",
     "section": "A sketch of the proof of the Change of Variable Formula:",
     "text": "A sketch of the proof of the Change of Variable Formula:\nLet \\(F(u)\\) be a primitive of \\(f(u)\\), meaning \\(F'(u) = f(u)\\). Then, by the definition of an indefinite integral, we can write \\[\nF(u) = \\int f(u) \\, du.\n\\]\nBut since \\(u = u(x)\\), it is also true that \\(F(u) = F(u(x))\\). By differentiating with respect to \\(x\\), we obtain\n\\[\n\\frac{d}{dx} F(u(x)) = \\frac{d F}{d u} \\cdot \\frac{d u}{dx} = f(u(x)) \\cdot \\frac{du}{dx}.\n\\] Thus, \\(F(u(x))\\) is a primitive of the function\n\\[\nf(u(x)) \\cdot \\frac{d u}{dx},\n\\] or equivalently,\n\\[\nF(u(x)) = \\int f(u(x)) \\cdot \\frac{d u}{dx} \\, dx.\n\\] Finally, we conclude using the following chain of equalities:\n\\[\n\\int f(u) \\, du = F(u) = F(u(x)) = \\int f(u(x)) \\cdot \\frac{d u}{dx} \\, dx.\n\\]\n\nFootnote:\nI am aware that indefinite integrals can be misleading, as they might lead students to believe that the only primitives of\n\\[\n\\frac{1}{x}\n\\]\nare functions of the form\n\\[\n\\ln(\\vert x \\vert ) + C.\n\\]\nIndeed, it is common to write:\n\\[\n\\int \\frac{1}{x} \\, dx = \\ln (\\vert x \\vert ) + C.\n\\]\nAt an introductory high school level, my goal is to keep things as straightforward as possible. This topic might be explored in another post about derivatives defined on intervals."
@@ -172,14 +172,14 @@
     "href": "tutoring/index.html",
     "title": "Tutoring",
     "section": "",
-    "text": "Welcome to the Tutoring section! Here, you’ll find interactive notebooks and resources to help you understand math topics, starting with basic integrals.\n\n\n\nBasic Integrals"
+    "text": "Welcome to the Tutoring section! Here, you’ll find interactive notebooks and resources to help you understand math topics, starting with basic integrals.\n\n\n\nChange of Variables Formula for Indefinite Integrals"
   },
   {
     "objectID": "tutoring/index.html#available-topics",
     "href": "tutoring/index.html#available-topics",
     "title": "Tutoring",
     "section": "",
-    "text": "Basic Integrals"
+    "text": "Change of Variables Formula for Indefinite Integrals"
   },
   {
     "objectID": "blog/post_08-11-24.html",

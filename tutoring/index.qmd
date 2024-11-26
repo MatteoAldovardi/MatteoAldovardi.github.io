@@ -9,4 +9,4 @@ Welcome to the **Tutoring** section! Here, you'll find interactive notebooks and
 
 ## Available Topics
 
-- [Basic Integrals](basic_integrals.qmd)
+- [Change of Variables Formula for Indefinite Integrals](change_of_variables_in_indefinite_integrals.qmd)

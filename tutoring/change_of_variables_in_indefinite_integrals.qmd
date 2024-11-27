@@ -4,7 +4,7 @@ author: "Matteo Aldovardi"
 
 ## Introduction
 
-Integrals are a fundamental concept in calculus. In this document, we'll explore various types of basic integrals, their properties, and examples.
+Integrals are a widely used concept in calculus. In this document, we'll explore various types of basic integrals, their properties, and examples.
 
 ## 1. **Indefinite Integrals**
 
@@ -36,8 +36,8 @@ $$
 
 The $dx$ terms seem to "cancel," though this is a *formal passage*—not rigorous, but effective. Similarly, manipulations in specific examples often rely on such formal simplifications.
 
-**What does "formally" mean?**  
-In mathematics, *formal* reasoning involves symbolic manipulations that follow established rules without delving into deeper, rigorous definitions. For instance, treating $dx$ as if it were a fraction or "canceling" terms may not be strictly defined but is consistent with the final, rigorous result.
+**What does "formally" mean when we oppose it to "rigorously"?**
+In mathematics, formal steps refer to symbolic manipulations suggested by the notation, which may or may not rely on rigorous definitions. For example, treating $dx$ as a fraction or canceling terms might not initially be fully justified, but these steps often align with rigorous reasoning and lead to correct results. Formal does not imply a lack of rigor—it highlights a focus on notation and rules rather than detailed justification.
 
 ### Practical Example:
 

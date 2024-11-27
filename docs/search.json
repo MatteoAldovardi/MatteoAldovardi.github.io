@@ -144,14 +144,14 @@
     "href": "tutoring/change_of_variables_in_indefinite_integrals.html#introduction",
     "title": "",
     "section": "Introduction",
-    "text": "Introduction\nIntegrals are a fundamental concept in calculus. In this document, we’ll explore various types of basic integrals, their properties, and examples."
+    "text": "Introduction\nIntegrals are a widely used concept in calculus. In this document, we’ll explore various types of basic integrals, their properties, and examples."
   },
   {
     "objectID": "tutoring/change_of_variables_in_indefinite_integrals.html#indefinite-integrals",
     "href": "tutoring/change_of_variables_in_indefinite_integrals.html#indefinite-integrals",
     "title": "",
     "section": "1. Indefinite Integrals",
-    "text": "1. Indefinite Integrals\nAn indefinite integral represents a family of functions that share the same derivative. It is denoted as:\n\\[\n\\int f(x)\\,dx\n\\]\nFor example:\n\\[\n\\int \\frac{1}{1+x^2} \\, dx = \\arctan(x) + C.\n\\]\n\nSubstitution:\nThe substitution rule states:\n\\[\n\\int f(g(x)) \\cdot g'(x) \\, dx = \\int f(u) \\, du.\n\\]\nThis formula becomes easier to remember if you write \\(u(x)\\) in place of \\(g(x)\\), using the same letter to denote both the function and the variable. Formally, we can write:\n\\[\n\\int f(u(x)) \\cdot \\frac{d u}{d x} \\, dx = \\int f(u) \\, du.\n\\]\nThe \\(dx\\) terms seem to “cancel,” though this is a formal passage—not rigorous, but effective. Similarly, manipulations in specific examples often rely on such formal simplifications.\nWhat does “formally” mean?\nIn mathematics, formal reasoning involves symbolic manipulations that follow established rules without delving into deeper, rigorous definitions. For instance, treating \\(dx\\) as if it were a fraction or “canceling” terms may not be strictly defined but is consistent with the final, rigorous result.\n\n\nPractical Example:\nEvaluate the integral:\n\\[\n\\int \\frac{6 \\cdot x}{1 + 9 \\cdot x^4} \\, dx.\n\\]\nUsing the substitution \\(u = 3 \\cdot x^2\\), we compute \\(\\frac{du}{dx} = 6 \\cdot x\\). Formally, multiplying through by \\(dx\\) and dividing by \\(6 \\cdot x\\) gives:\n\\[\ndx = \\frac{du}{6 \\cdot x}.\n\\]\nSubstituting formally into the integral, we proceed as follows:\n\\[\n\\int \\frac{6x}{1 + (3 \\cdot x^2)^2} \\, dx = \\int \\frac{6 \\cdot x}{1 + u^2} \\, dx\n= \\int \\frac{6 \\cdot x}{1 + u^2} \\cdot \\frac{1}{6 \\cdot x} \\, du = \\int \\frac{1}{1 + u^2} \\, du.\n\\]\nFinally:\n\\[\n\\int \\frac{du}{1 + u^2} = \\arctan(u) + C = \\arctan(3 \\cdot x^2) + C.\n\\]"
+    "text": "1. Indefinite Integrals\nAn indefinite integral represents a family of functions that share the same derivative. It is denoted as:\n\\[\n\\int f(x)\\,dx\n\\]\nFor example:\n\\[\n\\int \\frac{1}{1+x^2} \\, dx = \\arctan(x) + C.\n\\]\n\nSubstitution:\nThe substitution rule states:\n\\[\n\\int f(g(x)) \\cdot g'(x) \\, dx = \\int f(u) \\, du.\n\\]\nThis formula becomes easier to remember if you write \\(u(x)\\) in place of \\(g(x)\\), using the same letter to denote both the function and the variable. Formally, we can write:\n\\[\n\\int f(u(x)) \\cdot \\frac{d u}{d x} \\, dx = \\int f(u) \\, du.\n\\]\nThe \\(dx\\) terms seem to “cancel,” though this is a formal passage—not rigorous, but effective. Similarly, manipulations in specific examples often rely on such formal simplifications.\nWhat does “formally” mean when we oppose it to “rigorously”? In mathematics, formal steps refer to symbolic manipulations suggested by the notation, which may or may not rely on rigorous definitions. For example, treating \\(dx\\) as a fraction or canceling terms might not initially be fully justified, but these steps often align with rigorous reasoning and lead to correct results. Formal does not imply a lack of rigor—it highlights a focus on notation and rules rather than detailed justification.\n\n\nPractical Example:\nEvaluate the integral:\n\\[\n\\int \\frac{6 \\cdot x}{1 + 9 \\cdot x^4} \\, dx.\n\\]\nUsing the substitution \\(u = 3 \\cdot x^2\\), we compute \\(\\frac{du}{dx} = 6 \\cdot x\\). Formally, multiplying through by \\(dx\\) and dividing by \\(6 \\cdot x\\) gives:\n\\[\ndx = \\frac{du}{6 \\cdot x}.\n\\]\nSubstituting formally into the integral, we proceed as follows:\n\\[\n\\int \\frac{6x}{1 + (3 \\cdot x^2)^2} \\, dx = \\int \\frac{6 \\cdot x}{1 + u^2} \\, dx\n= \\int \\frac{6 \\cdot x}{1 + u^2} \\cdot \\frac{1}{6 \\cdot x} \\, du = \\int \\frac{1}{1 + u^2} \\, du.\n\\]\nFinally:\n\\[\n\\int \\frac{du}{1 + u^2} = \\arctan(u) + C = \\arctan(3 \\cdot x^2) + C.\n\\]"
   },
   {
     "objectID": "tutoring/change_of_variables_in_indefinite_integrals.html#warnings",
@@ -172,14 +172,14 @@
     "href": "tutoring/index.html",
     "title": "Tutoring",
     "section": "",
-    "text": "Welcome to the Tutoring section! Here, you’ll find interactive notebooks and resources designed to help students I tutor gain a deeper understanding of various math topics.\n\n\n\nChange of Variables Formula for Indefinite Integrals"
+    "text": "Welcome to the Tutoring section! Here, you’ll find interactive notebooks and resources designed to help students I tutor gain a deeper understanding of various math topics."
   },
   {
     "objectID": "tutoring/index.html#available-topics",
     "href": "tutoring/index.html#available-topics",
     "title": "Tutoring",
-    "section": "",
-    "text": "Change of Variables Formula for Indefinite Integrals"
+    "section": "Available Topics",
+    "text": "Available Topics\n\nChange of Variables Formula for Indefinite Integrals"
   },
   {
     "objectID": "blog/post_08-11-24.html",

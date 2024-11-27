@@ -3,8 +3,6 @@ title: "Tutoring"
 format: html
 ---
 
-# Tutoring
-
 Welcome to the **Tutoring** section! Here, you'll find interactive notebooks and resources designed to help students I tutor gain a deeper understanding of various math topics.
 
 ## Available Topics

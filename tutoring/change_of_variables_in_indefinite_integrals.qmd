@@ -4,7 +4,7 @@ author: "Matteo Aldovardi"
 
 ## Introduction
 
-Integrals are a widely used concept in calculus. In this document, we'll explore various types of basic integrals, their properties, and examples.
+In this article, we’ll explore the basic concept of integrals, focusing on the change of variable formula. We’ll look at how substitution is used to simplify integrals, and discuss the difference between formal and rigorous steps in mathematical reasoning. Through a practical example, you’ll see how these techniques are applied to solve integrals efficiently. This content is intended for high school students to help build a solid foundation for understanding calculus concepts.
 
 ## 1. **Indefinite Integrals**
 
@@ -118,8 +118,9 @@ $$
 are functions of the form  
 
 $$ 
-\ln(\vert x \vert ) + C. 
+\ln(\vert x \vert ) + C,
 $$  
+where $C$ is a real number.
 
 Indeed, it is common to write:  
 

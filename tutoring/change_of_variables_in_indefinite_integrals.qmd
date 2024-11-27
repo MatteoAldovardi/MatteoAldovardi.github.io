@@ -37,6 +37,7 @@ $$
 The $dx$ terms seem to "cancel," though this is a *formal passage*—not rigorous, but effective. Similarly, manipulations in specific examples often rely on such formal simplifications.
 
 **What does "formally" mean when we oppose it to "rigorously"?**
+
 In mathematics, formal steps refer to symbolic manipulations suggested by the notation, which may or may not rely on rigorous definitions. For example, treating $dx$ as a fraction or canceling terms might not initially be fully justified, but these steps often align with rigorous reasoning and lead to correct results. Formal does not imply a lack of rigor—it highlights a focus on notation and rules rather than detailed justification.
 
 ### Practical Example:
